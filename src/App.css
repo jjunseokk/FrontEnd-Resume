@@ -32,7 +32,34 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.Logo {
+  width: 15%;
+}
+
+.white_bg {
+  width: 100vw;
+  height: 2000px; 
+  background-color: white;
+  transition: 1s;
+  color : black;
+}
+
+.black_bg {
+  width: 100vw;
+  height: 2000px;
+  background-color: black;
+  transition: 1s;
+}
+
+.font_color_black{
+  color: black;
+}
+.font_color_white{
+  color: white;
 }

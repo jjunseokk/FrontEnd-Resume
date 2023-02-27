@@ -1,23 +1,44 @@
-import logo from './logo.svg';
+import React, { useEffect, useState } from 'react';
 import './App.css';
+import styled from 'styled-components'
+import Header from './Components/Header';
+
+
+
+function ChangeColor() {
+  window.addEventListener('scroll', function () {
+
+  })
+}
+
+
 
 function App() {
+
+  const [scrollEvent, setScrollEvent] = useState(0);
+  const updateScroll = () => {
+    setScrollEvent(window.scrollY || document.documentElement.scrollTop);
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll); //clean up
+    };
+  }, []);
+
+  const handleScroll = () => {
+    // console.log(window.scrollY);
+    
+    window.addEventListener('scroll', updateScroll);
+  };
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className={ scrollEvent > 500? "white_bg":"black_bg"}>
+        <Header></Header>
+      </div>
     </div>
   );
 }
