@@ -63,3 +63,6 @@
 .font_color_white{
   color: white;
 }
+button{
+  background-color: transparent;
+}
