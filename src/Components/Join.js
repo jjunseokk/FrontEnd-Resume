@@ -40,7 +40,7 @@ function Join() {
     height: 100vh;
     border: 1px solid red;
     margin: 0 auto;
-    background-color: ${(props) => props.bgColor}; //props로 받기!!
+    background-color: ${(props) => props.bgColor}; //props로 받기!!!!
 
 `;
 
