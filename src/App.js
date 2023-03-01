@@ -1,16 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
-import styled from 'styled-components'
+import Join from './Components/Join';
+// import styled from 'styled-components'
 import Header from './Components/Header';
-
-
-
-function ChangeColor() {
-  window.addEventListener('scroll', function () {
-
-  })
-}
-
 
 
 function App() {
@@ -37,7 +29,8 @@ function App() {
   return (
     <div className="App">
       <div className={ scrollEvent > 500? "white_bg":"black_bg"}>
-        <Header></Header>
+        <Header />
+        <Join/>
       </div>
     </div>
   );

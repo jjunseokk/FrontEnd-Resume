@@ -9,9 +9,10 @@ function Header() {
     // 스크롤이벤트 스테이트 변수 선언
     const [scrollEvent, setScrollEvent] = useState(0);
 
-    const instargramUrl = 'https://www.instagram.com/jsjs_ppark/'
-    const githubUrl = 'https://github.com/jjunseokk'
-    const blogUrl = 'https://velog.io/@oask12'
+    const instargramUrl = 'https://www.instagram.com/jsjs_ppark/';
+    const githubUrl = 'https://github.com/jjunseokk';
+    const blogUrl = 'https://velog.io/@oask12';
+
     const updateScroll = () => {
         setScrollEvent(window.scrollY || document.documentElement.scrollTop);
     }
@@ -34,32 +35,41 @@ function Header() {
 
 
     return (
-        <TopMenu>
-            <FontAwesomeIcon icon={faPiedPiperAlt}
-                style={{ fontSize: 50 }} className={scrollEvent > 500 ? "Logo font_color_black" : "Logo font_color_white"}
-            />
-            <MenuBox className={scrollEvent > 500 ? "font_color_black" : "font_color_white"}>
-                <p>메뉴 1</p>
-                <p>메뉴 2</p>
-                <p>메뉴 3</p>
-                <p>메뉴 4</p>
-            </MenuBox>
-            <CurrentBox className={scrollEvent > 500 ? "font_color_black" : "font_color_white"}>
-                <button onClick={() => { window.open(instargramUrl) }}>
-                    <FontAwesomeIcon icon={faGithubAlt} style={{ fontSize: 40, color: "white" }} />
-                </button>
-                <button onClick={() => { window.open(githubUrl) }}>
-                    <FontAwesomeIcon icon={faInstagram} style={{ fontSize: 40, color: "white" }} />
-                </button>
+        <Container>
+            <TopMenu>
+                <FontAwesomeIcon icon={faPiedPiperAlt}
+                    style={{ fontSize: 50 }} className={scrollEvent > 500 ? "Logo font_color_black" : "Logo font_color_white"}
+                />
+                <MenuBox className={scrollEvent > 500 ? "font_color_black" : "font_color_white"}>
+                    <p>메뉴 1</p>
+                    <p>메뉴 2</p>
+                    <p>메뉴 3</p>
+                    <p>메뉴 4</p>
+                </MenuBox>
+                <CurrentBox className={scrollEvent > 500 ? "font_color_black" : "font_color_white"}>
+                    <button onClick={() => { window.open(instargramUrl) }}>
+                        <FontAwesomeIcon icon={faGithubAlt} style={{ fontSize: 40 }}
+                            className={scrollEvent > 500 ? "font_color_black" : "font_color_white"} />
+                    </button>
+                    <button onClick={() => { window.open(githubUrl) }}>
+                        <FontAwesomeIcon icon={faInstagram} style={{ fontSize: 40 }}
+                            className={scrollEvent > 500 ? "font_color_black" : "font_color_white"} />
+                    </button>
 
-                <button onClick={() => { window.open(blogUrl) }}>
-                    <FontAwesomeIcon icon={faBloggerB} style={{ fontSize: 40, color: "white" }} />
-                </button>
-            </CurrentBox>
-        </TopMenu>
+                    <button onClick={() => { window.open(blogUrl) }}>
+                        <FontAwesomeIcon icon={faBloggerB} style={{ fontSize: 40 }}
+                            className={scrollEvent > 500 ? "font_color_black" : "font_color_white"} />
+                    </button>
+                </CurrentBox>
+            </TopMenu>
+        </Container>
+
     );
 }
 
+const Container = styled.div`
+    height: 150px;
+`;
 
 const TopMenu = styled.div`
     width: 100vw;
@@ -69,6 +79,7 @@ const TopMenu = styled.div`
     justify-content: space-around;
     align-items: center;
     position: fixed;
+    z-index: 100;
 `;
 
 const MenuBox = styled.div`
