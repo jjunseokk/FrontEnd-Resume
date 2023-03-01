@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import '../Style/join.css'
 import styled from "styled-components";
 import { Swiper, SwiperSlide } from "swiper/react"; // basic
@@ -40,8 +40,8 @@ function Join() {
     height: 100vh;
     border: 1px solid red;
     margin: 0 auto;
-    background-color: ${(props) => props.bgColor};
-    z-index: -1;
+    background-color: ${(props) => props.bgColor}; //props로 받기
+
 `;
 
     return (
