@@ -23,12 +23,8 @@
 .font_color_white{
   color: white;
 }
+
 button{
   background-color: transparent;
-  border:none;
-  cursor: pointer;
-}
-button:hover{
-  scale: 1.3;
-  transition: 1s;
+  border: transparent;
 }
