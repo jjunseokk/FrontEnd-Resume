@@ -1,0 +1,29 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
+
+.img-frame{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.slide1{
+    display: block;
+    width: 100%;
+}
+.text-frame{
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.swiper .swiper-pagination {
+    position: absolute;
+    bottom: 70px !important;
+}
+
+.swiper .swiper-pagination-bullet {
+    background-color: red;
+    margin: 0 10px !important;
+}

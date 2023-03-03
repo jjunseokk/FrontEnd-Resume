@@ -1,5 +1,5 @@
 import React from "react";
-import '../Style/join.css'
+import '../Style/project.css'
 import "swiper/css"; //basic
 import "swiper/css/navigation";
 import "swiper/css/pagination";
