@@ -40,12 +40,6 @@ function Header() {
                 <FontAwesomeIcon icon={faPiedPiperAlt}
                     style={{ fontSize: 50 }} className={scrollEvent > 500 ? "Logo font_color_black" : "Logo font_color_white"}
                 />
-                <MenuBox className={scrollEvent > 500 ? "font_color_black" : "font_color_white"}>
-                    <p>메뉴 1</p>
-                    <p>메뉴 2</p>
-                    <p>메뉴 3</p>
-                    <p>메뉴 4</p>
-                </MenuBox>
                 <CurrentBox className={scrollEvent > 500 ? "font_color_black" : "font_color_white"}>
                     <button onClick={() => { window.open(instargramUrl) }}>
                         <FontAwesomeIcon icon={faGithubAlt} style={{ fontSize: 40 }}
@@ -76,7 +70,7 @@ const TopMenu = styled.div`
     height: 150px;
     color: white;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     position: fixed;
     z-index: 100;
@@ -94,6 +88,7 @@ const CurrentBox = styled.div`
     width: 15vw;
     display: flex;
     justify-content: space-around;
+    margin-right: 20px;
     /* border: 1px solid red; */
 `;
 

@@ -8,6 +8,7 @@
   background-color: white;
   transition: 1s;
   color : black;
+  position: relative;
 }
 
 .black_bg {
@@ -15,6 +16,7 @@
   height: 2000px;
   background-color: black;
   transition: 1s;
+  position: relative;
 }
 
 .font_color_black{
@@ -27,4 +29,21 @@
 button{
   background-color: transparent;
   border: transparent;
+}
+
+.consoleImg{
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  width: 150px;
+  animation: rotateIcon 2s linear infinite;
+}
+
+@keyframes rotateIcon {
+  0%{
+    rotate: 0deg;
+  }
+  100%{
+    rotate: 360deg;
+  }
 }
