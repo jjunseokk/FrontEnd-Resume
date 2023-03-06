@@ -62,7 +62,7 @@ function Header() {
 }
 
 const Container = styled.div`
-    height: 150px;
+    height: 50px;
 `;
 
 const TopMenu = styled.div`
