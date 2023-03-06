@@ -57,7 +57,7 @@ function App() {
             <div className={scrollEvent > 650 ? "white_bg" : "black_bg"}>
               <Header />
               <Introduce/>
-              {/* <Project2 /> */}
+              <Project2 />
             </div>
           )
       }

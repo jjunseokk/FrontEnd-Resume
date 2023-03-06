@@ -20,7 +20,7 @@ import Bongues from '../asset/Image/Bongues.png';
 function Project() {
     const Container = styled.div`
     width: 50vw;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: 0 auto;
     background-color: ${(props) => props.bgColor}; //props로 받기!!!!
 `;

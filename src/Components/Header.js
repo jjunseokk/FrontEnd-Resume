@@ -38,6 +38,9 @@ function Header() {
                 <FontAwesomeIcon icon={faPiedPiperAlt}
                     style={{ fontSize: 50 }} className={scrollEvent > 500 ? "Logo font_color_black" : "Logo font_color_white"}
                 />
+                <div className="linkBtnArea">
+
+                </div>
                 <div className="btn_wrap">
                     <span className="snsArea">Share</span>
                     <div className="container">
@@ -87,8 +90,9 @@ const TopMenu = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    z-index: 100;
+    background-color: transparent;
+    /* position: fixed; */
+    z-index: 10;
 `;
 
 export default Header;

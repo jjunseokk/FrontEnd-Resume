@@ -3,8 +3,8 @@
     --yellow: rgb(253, 216, 53);
     --blue: rgb(98, 0, 234);
     
-    --c1: rgb(28, 26, 26);
-    --c2: rgb(222, 222, 222);
+    --c1: rgb(0, 0, 0);
+    --c2: rgb(255, 255, 255);
     
     --left-color: var(--c1);
     --right-color: var(--c2);
@@ -36,8 +36,9 @@
   }
   
   .side .fancy {
-    font-family: "Lobster", cursive;
-    font-size: 1.3em;
+    font-family: "Rubik", sans-serif;
+    font-size: 1em;
+    font-weight: bold;
     line-height: 0.8em;
   }
   
