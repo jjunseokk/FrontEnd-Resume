@@ -39,16 +39,16 @@ function Header() {
                     style={{ fontSize: 50 }} className={scrollEvent > 500 ? "Logo font_color_black" : "Logo font_color_white"}
                 />
                 <div className="linkBtnArea">
-
+                    <button></button>
                 </div>
                 <div className="btn_wrap">
                     <span className="snsArea">Share</span>
                     <div className="container">
-                    <button onClick={() => { window.open(instargramUrl) }}>
+                    <button onClick={() => { window.open(githubUrl) }}>
                         <FontAwesomeIcon icon={faGithubAlt} style={{ fontSize: 40 }}
                             className="font_color_black" />
                     </button>
-                    <button onClick={() => { window.open(githubUrl) }}>
+                    <button onClick={() => { window.open(instargramUrl) }}>
                         <FontAwesomeIcon icon={faInstagram} style={{ fontSize: 40 }}
                             className="font_color_black" />
                     </button>
