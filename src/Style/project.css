@@ -20,7 +20,7 @@
 
 .swiper .swiper-pagination {
     position: absolute;
-    bottom: 70px !important;
+    bottom: -10px !important;
 }
 
 .swiper .swiper-pagination-bullet {
