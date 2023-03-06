@@ -1,0 +1,76 @@
+:root {
+    --dark: rgb(20, 20, 20);
+    --yellow: rgb(253, 216, 53);
+    --blue: rgb(98, 0, 234);
+    
+    --c1: rgb(28, 26, 26);
+    --c2: rgb(222, 222, 222);
+    
+    --left-color: var(--c1);
+    --right-color: var(--c2);
+  }
+  
+  .Container {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--dark);
+    margin: 0px;
+    position: relative;
+  }
+  
+  .side {
+    display: grid;
+    height: 100vh;
+    overflow: hidden;
+    place-items: center;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .side .title {
+    font-family: "Rubik", sans-serif;
+    font-size: 3.5vw;
+    margin: 0px 10vw;
+    width: 80vw;
+  }
+  
+  .side .fancy {
+    font-family: "Lobster", cursive;
+    font-size: 1.3em;
+    line-height: 0.8em;
+  }
+  
+  #left-side {
+    background-color: var(--left-color);
+    width: 60%;
+    z-index: 2;
+  }
+  
+  #left-side .title {  
+    color: white;  
+  }
+  
+  #left-side .fancy {
+    color: var(--right-color);
+  }
+  
+  #right-side {
+    background-color: var(--right-color);
+  }
+  
+  #right-side .title {
+    color: var(--dark);
+  }
+  
+  #right-side .fancy {
+    color: var(--c2);
+  }
+  
+  .downImg{
+    display: block;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    /* border: 1px solid red; */
+  }
