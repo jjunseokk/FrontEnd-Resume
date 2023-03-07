@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import '../Style/project.css'
 import styled from "styled-components";
 import { Swiper, SwiperSlide } from "swiper/react"; // basic
@@ -19,7 +19,7 @@ import Bongues from '../asset/Image/Bongues.png';
 
 function Project() {
     const Container = styled.div`
-    width: 50vw;
+    width: 60vw;
     /* border: 1px solid red; */
     margin: 0 auto;
     background-color: ${(props) => props.bgColor}; //props로 받기!!!!

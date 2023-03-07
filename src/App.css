@@ -45,16 +45,6 @@ button{
 /* --------------- */
 /* ----SNS button--- */
 
-i {
-  opacity: 0;
-  font-size: 28px;
-  color: #1F1E1E;
-  will-change: transform;
-  -webkit-transform: scale(.1);
-          transform: scale(.1);
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
-}
 
 .btn_wrap {
   position: relative;
