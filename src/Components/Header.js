@@ -11,35 +11,32 @@ function Header() {
     const githubUrl = 'https://velog.io/@oask12/series';
     const blogUrl = 'https://velog.io/@oask12';
 
+    let navigate = useNavigate();
 
+    const [locationKeys, setLocationKeys] = useState([]);
 
+    
     return (
         <Container>
             <TopMenu>
                 <FontAwesomeIcon icon={faPiedPiperAlt}
                     style={{ fontSize: 50 }} className="Logo font_color_white"
                 />
-                <div className="linkBtnArea">
-                    <button></button>
-                </div>
-                <div>
-                    <Link to="/Intro">go to</Link>
-                </div>
                 <div className="btn_wrap">
                     <span className="snsArea">SNS</span>
                     <div className="container">
-                    <button onClick={() => { window.open(githubUrl) }}>
-                        <FontAwesomeIcon icon={faGithubAlt} style={{ fontSize: 40 }}
-                            className="font_color_black" />
-                    </button>
-                    <button onClick={() => { window.open(instargramUrl) }}>
-                        <FontAwesomeIcon icon={faInstagram} style={{ fontSize: 40 }}
-                            className="font_color_black" />
-                    </button>
-                    <button onClick={() => { window.open(blogUrl) }}>
-                        <FontAwesomeIcon icon={faBloggerB} style={{ fontSize: 40 }}
-                            className="font_color_black" />
-                    </button>
+                        <button onClick={() => { window.open(githubUrl) }}>
+                            <FontAwesomeIcon icon={faGithubAlt} style={{ fontSize: 40 }}
+                                className="font_color_black" />
+                        </button>
+                        <button onClick={() => { window.open(instargramUrl) }}>
+                            <FontAwesomeIcon icon={faInstagram} style={{ fontSize: 40 }}
+                                className="font_color_black" />
+                        </button>
+                        <button onClick={() => { window.open(blogUrl) }}>
+                            <FontAwesomeIcon icon={faBloggerB} style={{ fontSize: 40 }}
+                                className="font_color_black" />
+                        </button>
                     </div>
                 </div>
             </TopMenu>

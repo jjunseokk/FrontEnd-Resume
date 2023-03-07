@@ -2,8 +2,8 @@
 
 .HorizonSlide-container {
   scroll-behavior: smooth;
+  position: relative;
 }
-
 body {
   overflow-x: hidden;
 

@@ -29,6 +29,8 @@
 
   background: hsl(0, 0%, 0%);
   font-family: "Lato", "Segoe Ui", -apple-system, BlinkMacSystemFont, sans-serif;
+
+  position: relative;
 }
 
 /* .flip-card-container */
@@ -193,14 +195,14 @@ figure p {
   cursor: pointer;
 }
 
-button:hover,
-button:focus {
+.Language-container button:hover,
+.Language-container button:focus {
   color: var(--primary);
   background: hsla(var(--hue), 25%, 10%, .2);
   border-color: currentColor;
 }
 
-button:active {
+.Language-container button:active {
   transform: translate(2px);
 }
 
@@ -304,9 +306,9 @@ button:active {
 }
 
 /* states */
-button:hover+.design-container,
-button:active+.design-container,
-button:focus+.design-container {
+.Language-container button:hover+.design-container,
+.Language-container button:active+.design-container,
+.Language-container button:focus+.design-container {
   --tr: 20;
   --op: .7;
 }

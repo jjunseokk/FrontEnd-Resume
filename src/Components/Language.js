@@ -9,6 +9,8 @@ import jsLogo from '../asset/Image/jsLogo.png';
 import jqueryLogo from '../asset/Image/jqueryLogo.png';
 import reactLogo from '../asset/Image/reactLogo.png';
 import reduxLogo from '../asset/Image/redux.png';
+import bootLogo from '../asset/Image/bootLogo.png';
+import rnLogo from '../asset/Image/rnLogo.png';
 
 function Language() {
 
@@ -31,12 +33,19 @@ function Language() {
                 btnTitle="참고서 바로가기"
                 url="https://developer.mozilla.org/ko/docs/Web/JavaScript"
                 img={jsLogo}
+                text=""
             />
             <LanguageCard 
                 title="Jquery"
                 btnTitle="참고서 바로가기"
                 url="https://api.jquery.com"
                 img={jqueryLogo}
+            />
+            <LanguageCard 
+                title="Bootstrap"
+                btnTitle="참고서 바로가기"
+                url="https://getbootstrap.com"
+                img={bootLogo}
             />
             <LanguageCard 
                 title="REACT"
@@ -49,6 +58,12 @@ function Language() {
                 btnTitle="참고서 바로가기"
                 url="https://ko.redux.js.org"
                 img={reduxLogo}
+            />
+            <LanguageCard 
+                title="React Native"
+                btnTitle="참고서 바로가기"
+                url="https://reactnative.dev/"
+                img={rnLogo}
             />
         </div>
     )

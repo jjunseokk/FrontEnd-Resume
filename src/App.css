@@ -37,11 +37,9 @@
   transition: 1s;
 }
 button{
-  background-color: transparent;
+  /* background-color: transparent; */
   border: transparent;
 }
-
-
 /* --------------- */
 /* ----SNS button--- */
 
