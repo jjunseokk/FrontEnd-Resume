@@ -1,8 +1,9 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import '../Style/project2.css';
 
 import Project from '../Components/Project';
 import Language from "./Language";
+import Tool from "./Tool";
 
 function Project2() {
 
@@ -13,17 +14,18 @@ function Project2() {
         document.body.appendChild(script);
     },[])
 
-    document.querySelectorAll('a').forEach(elem => {
-        elem.addEventListener('click', e => {
-            e.preventDefault();
-            document.querySelector(elem.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth',
-                offsetTop: 20
+    useEffect(()=>{
+        document.querySelectorAll('a').forEach(elem => {
+            elem.addEventListener('click', e => {
+                e.preventDefault();
+                document.querySelector(elem.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth',
+                    offsetTop: 20
+                });
             });
-        });
-    });
-
-
+        });    
+    },[])
+    
 
     return (
         <div className="project2-container">
@@ -43,6 +45,7 @@ function Project2() {
 
             <section id="section-2">
                 <span>
+                    <Tool/>
                 </span>
             </section>
 

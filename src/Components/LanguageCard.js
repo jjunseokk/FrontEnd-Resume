@@ -1,5 +1,6 @@
 import React from "react";
-import '../Style/language.css'
+import '../Style/language.css';
+import styled from "styled-components";
 
 
 
@@ -21,6 +22,7 @@ function LanguageCard(props) {
                 <div className="card-back">
                     <figure>
                         <div className="img-bg"></div>
+                        <p>{props.text}</p>
                         <img src={props.img} alt="Brohm Lake" />
                     </figure>
 

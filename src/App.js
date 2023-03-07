@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Header from './Components/Header';
-import Intro from './Components/Intro';
 import './App.css';
 
 
@@ -10,6 +9,7 @@ import LoadingScreen from 'react-loading-screen';
 
 // js
 import Main from './Components/Main'
+
 import loading from './asset/Image/loading.gif'
 
 
@@ -26,6 +26,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => { setLoaded(false) }, 3000)
   }, [])
+
 
 
   // 스크롤 이벤트 -----------------------
@@ -57,8 +58,7 @@ function App() {
             <div className="black_bg">
               <Header />
               <Routes>
-                <Route path='/' element={<Main />} />
-                <Route path='/Intro' element={<Intro/>}/>
+                <Route path='/main' element={<Main />} />
               </Routes>
 
             </div>
