@@ -14,8 +14,11 @@ import rnLogo from '../asset/Image/rnLogo.png';
 
 function Language() {
 
+    
+
     return (
         <div className="Language-container">
+            <h1 style={{color: 'white', width:'100%', textAlign:'center'}}>Language</h1>
             <LanguageCard 
                 title="HTML"
                 btnTitle="참고서 바로가기"
@@ -65,6 +68,7 @@ function Language() {
                 url="https://reactnative.dev/"
                 img={rnLogo}
             />
+
         </div>
     )
 

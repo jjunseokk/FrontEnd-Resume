@@ -15,7 +15,7 @@ import loading from './asset/Image/loading.gif'
 
 
 function App() {
-  console.clear();
+  // console.clear();
   
   const [scrollEvent, setScrollEvent] = useState(0);// 스크롤 이벤트
   const [loaded, setLoaded] = useState(true); //로딩 스크린 
@@ -58,7 +58,7 @@ function App() {
             <div className="black_bg">
               <Header />
               <Routes>
-                <Route path='/main' element={<Main />} />
+                <Route path='/' element={<Main />} />
               </Routes>
 
             </div>

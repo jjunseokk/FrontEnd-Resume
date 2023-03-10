@@ -51,7 +51,8 @@ const Container = styled.div`
 
 const TopMenu = styled.div`
     width: 100vw;
-    height: 150px;
+    height: auto;
+    padding: 10px;
     color: white;
     display: flex;
     justify-content: space-between;
