@@ -2,13 +2,14 @@ import React from "react";
 import '../Style/tool.css'
 
 import slackLogo from '../asset/Image/slackLogo.png'
+import gitLogo from '../asset/Image/gitLogo.png';
 
 const ToolCard = (props) => {
     return (
         <>
-            <div className="img-wrapper slower">
+            <div className={props.style}>
                 <a href="https://altphotos.com/photo/stylish-parisian-cafe-terrace-279/" target="_blank" rel="noopener">
-                    <img src={slackLogo} alt="" />
+                    <img src={props.img} alt="" />
                 </a>
             </div>
 

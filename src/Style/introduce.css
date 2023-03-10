@@ -1,3 +1,4 @@
+*{margin: 0; padding: 0;}
 :root {
     --dark: rgb(20, 20, 20);
     --yellow: rgb(253, 216, 53);
@@ -44,8 +45,10 @@
   
   #left-side {
     background-color: var(--left-color);
-    width: 30%;
+    /* width: 30%; */
     z-index: 2;
+    animation: Action 5s;
+    transition: all 2s;
   }
   
   #left-side .title {  
@@ -69,9 +72,70 @@
   }
   
   .downImg{
+    font-size: 15px;
     display: block;
     position: absolute;
     bottom: 10%;
     left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    animation: Down 3s infinite;
+    z-index: 100;
     /* border: 1px solid red; */
+  }
+
+  .goResume{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: Opacity 10s;
+    z-index: 100;
+    /* background-color: black; */
+  }
+
+  .resumeBtn{
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 10%;
+    
+  }
+
+
+  @keyframes Action {
+    0%{
+      width: 30%;
+    }
+    20%{
+      width: 50%;
+    }
+    40%{
+      width: 20%;
+    }
+    60%{
+      width: 50%;
+    }
+    100%{
+      width: 100%;
+    }
+  }
+
+  @keyframes Down {
+    0%{
+      bottom: 10%;
+    }
+    80%{
+      bottom:7%;
+    }
+  }
+
+  @keyframes Opacity {
+    0%{
+      opacity: 0;
+      transition: all 100s;
+    }
+    80%{
+      opacity: 1;
+    }
   }
