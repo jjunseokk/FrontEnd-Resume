@@ -20,7 +20,9 @@ import rockpaper from '../asset/Image/rockpaper.png';
 import random from "../asset/Image/random.png"
 import todo from '../asset/Image/todo.png';
 import wheather from '../asset/Image/weather.png';
-import popup from '../asset/Image/popup.png'
+import popup from '../asset/Image/popup.png';
+import hnm from '../asset/Image/hnm.png';
+import resume from '../asset/Image/resume.png';
 
 
 function Project() {
@@ -63,11 +65,32 @@ function Project() {
                     />
                 </SwiperSlide>
                 <SwiperSlide>
+                    <Card img={hnm} alt="hnm" title='HnM 미니페이지(반응형)' 
+                    text="HnM 미니 페이지로 React를 사용했으며 JSON파일로 쇼핑리스트를 map을 통해 뿌려주었습니다. 또 로그인 페이지를 만들어 라우터를 이용해 
+                    로그인이 되지 않는다면 상세페이지로 넘어가지 않게 작성하였고 Redux로 상태관리를 하여 작성하였습니다."
+                    img1 ="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white"
+                    img2 ="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=white"
+                    page ="https://hnm-practice.netlify.app/"
+                    git="https://github.com/jjunseokk/hnm-site"
+                    />
+                </SwiperSlide>
+                <SwiperSlide>
                     <Card img={rockpaper} alt="game" title='가위바위보 미니게임(반응형)' 
                     text="가위바위보 미니 게임입니다. random 함수를 이용해 컴퓨터는 랜덤 함수를 통해서 랜덤으로 가위, 바위, 보 중 하나를 선택하여
                     사용자에게 표시합니다. Component를 활용하여 작성하였고 사용자가 어떤 기기로 사용할 지 몰라 반응형으로 작성하였습니다."
                     img1 ="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white"
                     img2 ="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=white"
+                    page ="https://jjunseokk.github.io/rock-paper-scissors/"
+                    git="https://github.com/jjunseokk/rock-paper-scissors"
+                    />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Card img={resume} alt="resume" title='포트폴리오' 
+                    text="React를 이용한 포트폴리오입니다. Component 재사용과 Router를 이용하였고 Styled Component를 사용하여
+                    좀 더 편리하게 Style 작업을 하였습니다."
+                    img1 ="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white"
+                    img2 ="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=white"
+                    img3 ="https://img.shields.io/badge/Styled Component-FF3399?style=flat-square&logo"
                     page ="https://jjunseokk.github.io/rock-paper-scissors/"
                     git="https://github.com/jjunseokk/rock-paper-scissors"
                     />
@@ -90,7 +113,7 @@ function Project() {
                     img1 ="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white"
                     img2 ="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white"
                     img3 ="https://img.shields.io/badge/Javascript-F7DF1E?style=flat-square&logo=Javascript&logoColor=white"
-                    img4 = "https://img.shields.io/badge/jQuery-0769AD?style=flat-square&logo=jQuery&logoColor=white"
+                    img4 = "https://img.shields.io/badge/jQuery-0769AD?sty~le=flat-square&logo=jQuery&logoColor=white"
                     page ="https://creative-churros-35b6d4.netlify.app"
                     git="https://github.com/jjunseokk/Weather-news"
                     />
