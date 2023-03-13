@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import '../Style/project2.css';
 
 import Project from '../Components/Project';
 import Language from "./Language";
-import Tool from "./Tool";
 
 function Project2() {
+    const topMenu = document.querySelectorAll('a');
 
     useEffect(() => {
         const script = document.createElement("script");
@@ -15,10 +15,11 @@ function Project2() {
     },[])
 
     useEffect(()=>{
-        document.querySelectorAll('a').forEach(elem => {
+        topMenu.forEach(elem => {
+            const select = document.querySelector(elem.getAttribute('href'))
             elem.addEventListener('click', e => {
                 e.preventDefault();
-                document.querySelector(elem.getAttribute('href')).scrollIntoView({
+                select.scrollIntoView({
                     behavior: 'smooth',
                     offsetTop: 20
                 });
@@ -32,7 +33,6 @@ function Project2() {
             <nav>
                 <ul>
                     <li><a href="#section-1">Language</a></li>
-                    <li><a href="#section-2">Tool</a></li>
                     <li><a href="#section-3">Project</a></li>
                 </ul>
             </nav>
@@ -43,11 +43,6 @@ function Project2() {
                 </div>
             </section>
 
-            <section id="section-2">
-                <span>
-                    <Tool/>
-                </span>
-            </section>
 
             <section id="section-3">
                 <span>

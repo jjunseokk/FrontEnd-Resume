@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import styled from "styled-components";
 import { faPiedPiperAlt, faGithubAlt, faInstagram, faBloggerB } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import '../App.css';
-import { Link, useNavigate } from "react-router-dom";
 
 
 function Header() {
@@ -11,9 +10,6 @@ function Header() {
     const githubUrl = 'https://velog.io/@oask12/series';
     const blogUrl = 'https://velog.io/@oask12';
 
-    let navigate = useNavigate();
-
-    const [locationKeys, setLocationKeys] = useState([]);
 
     
     return (

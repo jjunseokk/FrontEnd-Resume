@@ -91,7 +91,6 @@
     transform: translate(-50%,-50%);
     animation: Opacity 10s;
     z-index: 100;
-    /* background-color: black; */
   }
 
   .resumeBtn{
