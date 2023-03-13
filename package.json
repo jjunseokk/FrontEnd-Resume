@@ -26,7 +26,6 @@
     "react-bootstrap": "^2.7.2",
     "react-dom": "^18.2.0",
     "react-flip-toolkit": "^7.0.17",
-    "react-gsap": "^3.2.1",
     "react-loading-screen": "^0.0.17",
     "react-modal": "^3.16.1",
     "react-parallax": "^3.5.1",
