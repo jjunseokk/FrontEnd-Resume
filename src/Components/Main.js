@@ -3,7 +3,7 @@ import '../App.css';
 // js
 import Project2 from '../Components/Project2';
 import Introduce from '../Components/Introduce';
-import HorizonSlide from './TextSlide';
+import End from './End';
 
 function Main() {
     
@@ -12,7 +12,7 @@ function Main() {
             <div className="black_bg">
                 <Introduce />
                 <Project2 />
-                <HorizonSlide />
+                <End/>
             </div>
         </div>
     );

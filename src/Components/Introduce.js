@@ -26,7 +26,7 @@ function Introduce() {
                 <h2 className="title">
                     Hello, I'm curious and record-loving. <br />front-end developer
                     <span className="fancy"> Park junseok!</span>
-                    <a className="goResume" href="../asset/Image/resume.pdf" download><button className="btn draw-border">Resume Download</button></a>
+                    <a className="goResume" href={resume} download><button className="btn draw-border">Resume Download</button></a>
                     <p className="downImg"> Scroll Down! ⬇️⬇️⬇️ </p>
                 </h2>
             </div>
