@@ -70,6 +70,7 @@ function Project() {
                     로그인이 되지 않는다면 상세페이지로 넘어가지 않게 작성하였고 Redux로 상태관리를 하여 작성하였습니다."
                     img1 ="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white"
                     img2 ="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=white"
+                    img3 ="https://img.shields.io/badge/Redux-764ABC?style=flat-square&logo=Redux&logoColor=white"
                     page ="https://hnm-practice.netlify.app/"
                     git="https://github.com/jjunseokk/hnm-site"
                     />
