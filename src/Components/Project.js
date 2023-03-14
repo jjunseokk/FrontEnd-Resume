@@ -91,8 +91,8 @@ function Project() {
                     img1 ="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white"
                     img2 ="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=white"
                     img3 ="https://img.shields.io/badge/Styled Component-FF3399?style=flat-square&logo"
-                    page ="https://jjunseokk.github.io/rock-paper-scissors/"
-                    git="https://github.com/jjunseokk/rock-paper-scissors"
+                    page ="https://fluffy-figolla-7b6ef8.netlify.app/"
+                    git="https://github.com/jjunseokk/FrontEnd-Resume"
                     />
                 </SwiperSlide>
                 <SwiperSlide>
