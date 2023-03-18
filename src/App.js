@@ -52,7 +52,7 @@ function App() {
             spinnerColor='white'
             textColor='white'
             logoSrc={loading}
-            text='Loading...'
+            text='PC화면으로 봐주세요..'
           >
           </LoadingScreen>) : (
             <div className="black_bg">
